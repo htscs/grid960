@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid960</title>
+  <%#= stylesheet_link_tag    "application" %>
+  <%#= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag "960_12_col/960_12_col.css", :media => "screen"%>
+  <%= stylesheet_link_tag "960_12_col/reset.css", :media => "screen"%>
+  <%= stylesheet_link_tag "960_12_col/text.css", :media => "screen"%>
+  <%#= stylesheet_link_tag "css/style.css", :media => "screen"%>
+  <%= stylesheet_link_tag "css/orbit.css", :media => "screen"%>  
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+<%= javascript_include_tag "application" %>
+
+</body>
+</html>
